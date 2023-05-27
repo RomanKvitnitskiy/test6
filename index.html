@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Cisco - Helper</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="images/home/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" media="screen" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="jquery.js"></script>
+  <script src="scroll.js"></script>
+  <script src="modal.js"></script>
+  <script>
+      function readMore(flag, more, btn) {
+        if (flag.style.display == "none") {
+          flag.style.display = "inline";
+          btn.innerHTML = "Відобразити";
+          more.style.display = "none";
+        } else {
+          flag.style.display = "none";
+          btn.innerHTML = "Закрити";
+          more.style.display = "inline";
+        }
+      }
+  </script>
+
+  <style>
+    .text_center11 {
+      margin: auto;
+      /* margin-top: 40px;
+margin-right: -100%; */
+      color: black;
+    }
+
+    .person1 {
+      border: 10px solid transparent;
+      width: 80%;
+      height: 80%;
+      opacity: 0.9;
+    }
+  </style>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#myPage" class="navbar-brand"><img src="images/home/logo.PNG" width="200%"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage">ГОЛОВНА</a></li>
+          <li><a href="#functionsCom">ФУНКЦІЇ</a></li>
+          <li><a href="#setup">НАЛАШТУВАННЯ</a></li>
+          <li><a href="#contact">КОНТАКТИ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/home/main1.jpg" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Між мрією та реальністю є міст.</h3>
+          <p>Технології Cisco створюють світ можливостей.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/home/main2.jpg" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>ПРОСТИМИ СЛОВАМИ ПРО СКЛАДНЕ!</h3>
+          <p>В нас ви знайдете відповідь на своє питання.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/home/main3.jpg" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>ОБ'ЄДНАННІ ОДНІЄЮ СПРАВОЮ!</h3>
+          <p>Ви також можете прийняти участь в аналогічних проєктах.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Наступна</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Попередня</span>
+    </a>
+  </div>
+  <!-- Container (The functionsCom Section) -->
+  <div id="functionsCom" class="container text">
+    <h3><center>КОМУТАТОР 3 РІВНЯ</center></h3>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Комутатор 3 рівня (також відомий як маршрутизатор) є мережевим пристроєм, який виконує ключову роль у мережевому 
+      інфраструктурі. Основною його функцією є маршрутизація даних між різними мережами на основі інформації з IP-протоколу.<br><br>
+      Основні функції комутатора 3 рівня включають:<br><br>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      1) <strong>Маршрутизація:</strong> Комутатор 3 рівня аналізує заголовки пакетів даних, що проходять через нього, 
+      і вирішує, куди направити ці пакети на основі інформації про мережевий шлях. 
+      Він використовує IP-адреси пакетів для визначення найкращого шляху до призначення.<br><br>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      2) <strong>Маршрутизація зворотного зв'язку:</strong> Комутатор 3 рівня здатний відправляти відповіді на запити, 
+      отримані від пакетів даних, назад до початкового вузла. Це важливо для забезпечення двостороннього зв'язку в мережі.<br><br>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      3) <strong>Фільтрація даних:</strong> Комутатор 3 рівня може виконувати фільтрацію даних на основі різних критеріїв, 
+      таких як IP-адреси призначення та джерела, номери портів та протоколи. Це дозволяє контролювати доступ 
+      до різних ресурсів мережі та забезпечити безпеку мережі.<br><br>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      4) <strong>NAT (Network Address Translation):</strong> Комутатор 3 рівня може виконувати функцію перетворення IP-адрес мережі, 
+      що називається NAT. Вона дозволяє внутрішнім пристроям використовувати одну зовнішню IP-адресу для з'єднання з 
+      Інтернетом. NAT забезпечує захист внутрішньої мережі та економію IP-адрес.<br><br>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      5) <strong>QoS (Quality of Service):</strong> Комутатор 3 рівня може використовувати технологію QoS для призначення 
+      пріоритетів пакетам даних в мережі. Це дозволяє пріоритезувати різні типи трафіку, такі як голосові 
+      або відеоданих, щоб забезпечити високу якість обслуговування для додатків, які вимагають низької затримки 
+      або високої пропускної здатності.<br><br>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      6) <strong>Сегментування мережі:</strong> Комутатор 3 рівня дозволяє створювати різні сегменти мережі, 
+      розділяючи її на логічні частини. Це дозволяє керувати трафіком і підвищує безпеку, 
+      оскільки він обмежує зв'язок між сегментами мережі.<br><br>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      7) <strong>Підтримка протоколів мережевої безпеки:</strong> Комутатор 3 рівня підтримує різні протоколи мережевої безпеки, 
+      такі як VPN (Virtual Private Network), фаерволи, IPSec (Internet Protocol Security) і т.д. 
+      Він забезпечує захист мережі від несанкціонованого доступу та інших загроз.<br><br>
+      
+      Ці функції дозволяють комутатору 3 рівня керувати рухом даних в мережі, 
+      забезпечувати надійність, безпеку та ефективне використання мережевих ресурсів.</p>
+    <br><br><br>
+    
+  </div>
+  <!-- Container (setup Section) -->
+  <div id="setup" class="bg-1">
+    <div class="container">
+      <h3 class="text-center">ОСНОВНІ НАЛАШТУВАННЯ</h3>
+      
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Маршрутизація</strong> <button id="btn1" onclick="readMore(flag1, more1, btn1)"> Відобразити </button> 
+          <span id="flag1"></span>
+          <span id="more1">
+            <br><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Основні команди налаштування маршрутизації на пристроях Cisco в 
+            залежності від версії операційної системи IOS можуть трохи відрізнятися. 
+            Ось кілька загальних команд для налаштування маршрутизації на пристроях Cisco:<br><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1) Налаштування IP-адреси і маршруту за замовчуванням:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-<span class="colorTextIf">if</span>)</span># ip address <span class="colorTextS">&lt;IP-адреса&gt; <Маска підмережі></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-<span class="colorTextIf">if</span>)</span># no shutdown<br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># ip default-gateway <span class="colorTextS">&lt;IP-адреса&gt;</span>
+              </p>
+              </div><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2) Додавання статичного маршруту:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># ip route <span class="colorTextS"><Мережа призначення> <Маска підмережі> &lt;IP-адреса наступного хопу або інтерфейс&gt;</span>
+              </p>
+            </div><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            3) Включення протоколу маршрутизації OSPF (Open Shortest Path First):<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># router ospf <span class="colorTextS"><Номер процесу OSPF></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-router)</span># network <span class="colorTextS"><Мережа> <Маска підмережі></span> area <span class="colorTextS"><Номер області></span>
+              </p>
+            </div><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            4) Включення протоколу маршрутизації RIP (Routing Information Protocol):<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># router rip<br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># network <span class="colorTextS"><Мережа></span>
+              </p>
+            </div><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            5) Налаштування маршрутизації між VLAN на комутаторі з підтримкою маршрутизації:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Switch</span><span class="colorTextConfig">(config)</span># interface vlan <span class="colorTextS"><Номер VLAN></span><br>
+                <span class="colorTextRouter">Switch</span><span class="colorTextConfig">(config-<span class="colorTextIf">if</span>)</span># ip address <span class="colorTextS">&lt;IP-адреса&gt; <Маска підмережі></span>
+              </p>
+            </div><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            6) Перегляд таблиці маршрутизації:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span># show ip route
+              </p>
+            </div><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Це лише деякі базові команди для налаштування маршрутизації 
+            на пристроях Cisco. Уточнена синтаксис та доступні команди можуть 
+            залежати від версії IOS та конфігурації пристрою. Рекомендується 
+            звертатися до документації Cisco або офіційних ресурсів для отримання докладнішої інформації.
+          </span>
+        </li>
+        <li class="list-group-item"><strong>Маршрутизація зворотного зв'язку</strong><button id="btn2" onclick="readMore(flag2, more2, btn2)"> Відобразити </button> 
+          <span id="flag2"></span>
+          <span id="more2"> 
+            <br><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Маршрутизація зворотного зв'язку (reverse path forwarding, RPF) 
+            є важливою функцією для контролю надійності та безпеки мережі. 
+            Вона перевіряє, чи маршрутизований трафік приходить через той самий інтерфейс, 
+            з якого був отриманий початковий пакет. Налаштування маршрутизації зворотного 
+            зв'язку в Cisco може варіюватися залежно від конфігурації і версії IOS, але основні кроки включають наступне:<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1) Включити функцію маршрутизації зворотного зв'язку на інтерфейсах:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-<span class="colorTextIf">if</span>)</span># ip verify unicast reverse-path
+              </p>
+            </div><br>
+           
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2) Вибрати режим перевірки RPF. Існують два основних режими: строгий (strict) та небрежний (loose). 
+            Режим строгої перевірки (strict mode) вимагає, щоб трафік повертався через той самий інтерфейс, 
+            через який був отриманий початковий пакет. Режим небрежної перевірки (loose mode) дозволяє трафіку 
+            повертатися через будь-який доступний інтерфейс, якщо він має маршрут до джерела пакета.<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># ip verify unicast source reachable-via <span class="colorTextS"><режим></span>
+              </p>
+            </div><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            3) Налаштувати додаткові параметри, які впливають на маршрутизацію зворотного зв'язку, 
+            такі як періодичність оновлення маршрутної таблиці та настройки логування:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># ip cef<br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># ip verify unicast source reachable-via all<br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># ip verify unicast source reachable-via rx allow-default<br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span>ip verify unicast source reachable-via rx maximum-log-disruptions 50
+              </p>
+            </div><br>
+                   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            4) Перевірте стан маршрутизації зворотного зв'язку:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span># show ip interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span># show ip cef<br>
+                <span class="colorTextRouter">Router</span># show ip verify source reachable-via
+              </p>
+            </div><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Зверніть увагу, що конфігурація маршрутизації зворотного зв'язку може бути складною, 
+            особливо в складних мережевих топологіях. Рекомендується ретельно вивчити документацію 
+            Cisco та консультуватися з фахівцями для впевненості у правильній настройці цієї функції.
+
+          </span>
+        </li>
+        <li class="list-group-item"><strong>Фільтрація даних</strong><button id="btn3" onclick="readMore(flag3, more3, btn3)"> Відобразити </button>
+          <span id="flag3"></span>
+          <span id="more3"> 
+            <br><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Настроювання фільтрації даних на пристроях Cisco виконується за допомогою Access Control Lists (ACL). 
+            ACL дозволяють керувати рухом пакетів у мережі на основі різних критеріїв, таких як IP-адреси, порти і протоколи. 
+            Ось декілька команд для налаштування фільтрації даних на пристроях Cisco:<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1) Створення ACL:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># access-list <span class="colorTextS"><номер></span> {permit | deny} <span class="colorTextS"><протокол> <джерело> <призначення></span>
+              </p>
+            </div><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Примітка: <strong>'<номер>'</strong> - це номер ACL, 
+            <strong>'<протокол>'</strong> - тип протоколу, 
+            <strong>'<джерело>'</strong> і <strong>'<призначення>'</strong> - діапазони IP-адрес або одиночні адреси.<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2) Використання ACL на інтерфейсах для фільтрації вхідного або вихідного трафіку:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-<span class="colorTextIf">if</span>)</span># ip access-group <span class="colorTextS"><номер ACL></span>{in | out}
+              </p>
+            </div><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Примітка: <strong>'<номер ACL>'</strong> - номер ACL, 
+              <strong>'in'</strong> - для фільтрації вхідного трафіку, 
+              <strong>'out'</strong> - для фільтрації вихідного трафіку.<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            3) Перегляд інформації про ACL:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span># show access-lists
+              </p>
+            </div><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            4) Виконання додаткових дій з ACL, таких як редагування або видалення:<br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># no access-list <span class="colorTextS"><номер></span>
+              </p>
+            </div><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Це лише основні команди для налаштування фільтрації даних на пристроях Cisco за допомогою ACL. 
+            ACL може мати різні варіації та параметри, що залежать від версії IOS та конфігурації пристрою. 
+            Рекомендується звернутися до документації Cisco або офіційних ресурсів для отримання докладнішої 
+            інформації про ACL та його налаштування.
+          </span>
+        </li>
+        <li class="list-group-item"><strong>NAT (Network Address Translation)</strong><button id="btn4" onclick="readMore(flag4, more4, btn4)"> Відобразити </button>
+          <span id="flag4"></span>
+          <span id="more4"> 
+            <br><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Налаштування Network Address Translation (NAT) на пристроях Cisco можна виконати за допомогою різних команд,
+             залежно від версії IOS та типу NAT, який ви хочете налаштувати. 
+             Ось декілька основних команд для налаштування NAT на пристроях Cisco: <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             1) Створення статичного NAT: <br><br>
+             <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># ip nat inside source static <span class="colorTextS">&lt;локальна IP-адреса&gt; &lt;глобальна IP-адреса&gt;</span>
+              </p>
+             </div><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Ця команда вказує, що локальна IP-адреса буде перекладена на глобальну IP-адресу. <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             2)Створення динамічного NAT: <br><br>
+             <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># ip nat inside source list <span class="colorTextS"><номер ACL></span> interface <span class="colorTextS"><інтерфейс></span> overload
+              </p>
+             </div><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             У цьому випадку, ACL (Access Control List) визначає діапазон локальних IP-адрес, 
+             які будуть перекладені, а <b>'interface'</b> вказує на зовнішній інтерфейс маршрутизатора, 
+             через який здійснюватиметься NAT. <b>'overload'</b> дозволяє використовувати портове перекладання (PAT), 
+             дозволяючи багатьом локальним IP-адресам використовувати одну глобальну IP-адресу. <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             3) Налаштування пристрою як NAT-пристрою: <br><br>
+             <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># ip nat inside             
+              </p>
+             </div><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Ця команда вказує, що вказаний інтерфейс є внутрішнім (inside) і
+              NAT буде застосовуватися до пакетів, що проходять через цей інтерфейс. <br><br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+              4) Встановлення зв'язку між внутрішніми та зовнішніми інтерфейсами NAT: <br><br>
+              <div class="centered-left-text">
+                <p>
+                  <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><внутрішній інтерфейс></span><br>
+                  <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># ip nat inside <br>
+                  <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><зовнішній інтерфейс></span><br>
+                  <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># ip nat outside
+                </p>
+              </div><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Ці команди вказують, які інтерфейси є внутрішніми і зовнішніми для NAT.<br><br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              5) Перегляд інформації про NAT: <br><br>
+              <div class="centered-left-text">
+                <p>
+                  <span class="colorTextRouter">Router</span># show ip nat translations <br>
+                  <span class="colorTextRouter">Router</span># show ip nat statistics
+                </p>
+              </div><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Ці команди дозволяють переглядати активні переклади NAT та статистику NAT на маршрутизаторі Cisco. <br><br>
+
+              Зверніть увагу, що налаштування NAT може варіюватися в залежності від конкретної версії IOS та моделі пристрою Cisco.
+          </span>
+        </li>
+        <li class="list-group-item"><strong>QoS (Quality of Service)</strong><button id="btn5" onclick="readMore(flag5, more5, btn5)"> Відобразити </button>
+          <span id="flag5"></span>
+          <span id="more5"> 
+            <br><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Налаштування Quality of Service (QoS) на пристроях Cisco включає в
+             себе використання різних команд для призначення пріоритетів трафіку, 
+             обмеження пропускної здатності та управління буферами. Ось декілька 
+             основних команд для налаштування QoS на пристроях Cisco: <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             1) Визначення класів трафіку і пріоритетів: <br><br>
+             <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># class-map <span class="colorTextS"><ім'я-класу></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-cmap)</span># match <span class="colorTextS"><критерії></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># policy-map <span class="colorTextS"><ім'я-політики></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-pmap)</span># class <span class="colorTextS"><ім'я-класу></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-pmap-c)</span># <span class="colorTextS"><дія></span> 
+              </p>
+             </div><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Ці команди дозволяють визначити класи трафіку за допомогою <b>'class-map'</b>
+             і визначити правила для відповідного класу за допомогою <b>'policy-map'</b>. 
+             Ви можете використовувати <b>'match'</b> для встановлення критеріїв збігу для 
+             класу та <b>'дія'</b> для визначення дії, яку необхідно застосувати до трафіку. <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             2) Налаштування пріоритету через зворотну смугу: <br><br>
+             <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># bandwidth <span class="colorTextS"><пропускна-здатність></span>
+              </p>
+             </div> <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Ця команда дозволяє налаштувати пропускну здатність для інтерфейсу. 
+             Вона використовується для розподілу пропускної здатності між різними 
+             класами трафіку на інтерфейсі. <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             3) Встановлення обмежень швидкості: <br><br>
+             <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># policy-map <span class="colorTextS"><ім'я-політики></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-pmap)</span># class <span class="colorTextS"><ім'я-класу></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-pmap-c)</span># policy <span class="colorTextS"><швидкість> <спосіб-поліціювання></span>
+              </p>
+             </div><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Ці команди дозволяють встановити обмеження швидкості для певного класу трафіку. 
+             Ви можете вказати швидкість та спосіб поліціювання (наприклад, дозволяти, відкидати або маркувати пакети). <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             4) Налаштування чергування через буфери: <br><br>
+             <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># service-policy output <span class="colorTextS"><ім'я-політики></span>
+              </p>
+             </div><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Ця команда дозволяє налаштувати чергування через буфери для вихідного трафіку на інтерфейсі. 
+             Ви можете вказати ім'я політики QoS, яку потрібно застосувати до вихідного трафіку. <br> <br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             5) Перегляд статистики QoS: <br><br> 
+             <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span># show policy-map interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span># show class-map
+              </p>
+             </div><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Ці команди дозволяють переглядати статистику QoS, таку як статистику політик QoS на конкретному інтерфейсі або список класів трафіку. <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Зверніть увагу, що налаштування QoS може варіюватися залежно від конкретної версії IOS та моделі пристрою Cisco.
+
+          </span>
+        </li>
+        <li class="list-group-item"><strong>Сегментування мережі</strong><button id="btn6" onclick="readMore(flag6, more6, btn6)"> Відобразити </button>
+          <span id="flag6"></span>
+          <span id="more6"> 
+            <br><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Для налаштування сегментування мережі на пристроях Cisco можна використовувати команди, 
+            пов'язані з VLAN (Virtual LAN) і маршрутизацією між VLAN. Ось кілька основних команд для 
+            налаштування сегментування мережі: <br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1) Створення VLAN: <br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># vlan <span class="colorTextS"><номер-VLAN></span>
+              </p>
+            </div><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Ця команда створює новий VLAN з вказаним номером. Ви можете створювати багато VLAN на комутаторі. <br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2) Назначення порту до VLAN: <br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># switchport mode access <br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># switchport access vlan <span class="colorTextS"><номер-VLAN></span>
+              </p>
+            </div><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Ці команди назначають порт комутатора до вказаного VLAN. Вказівка <b>'switchport mode access'</b>
+            встановлює режим порту як "access", а <b>'switchport access vlan <номер-VLAN>'</b> призначає VLAN для порту.
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            3) Настроювання маршрутизації між VLAN: <br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># no shutdown <br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># description <span class="colorTextS"><опис-інтерфейсу></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># ip address <span class="colorTextS">&lt;IP-адреса&gt; <маска-підмережі></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># no shutdown <br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># description <span class="colorTextS"><опис-інтерфейсу></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># ip address <span class="colorTextS">&lt;IP-адреса&gt; <маска-підмережі></span>
+              </p>
+            </div><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Ці команди виконують налаштування маршрутизатора для маршрутизації між VLAN. 
+            Вам потрібно налаштувати інтерфейси маршрутизатора з відповідними IP-адресами 
+            та масками підмережі для кожного VLAN. <br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            4) Налаштування VLAN Trunking Protocol (VTP): <br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Switch</span><span class="colorTextConfig">(config)</span># vtp mode <span class="colorTextS"><режим></span><br>
+                <span class="colorTextRouter">Switch</span><span class="colorTextConfig">(config)</span># vtp domain <span class="colorTextS"><ім'я-домену></span><br>
+                <span class="colorTextRouter">Switch</span><span class="colorTextConfig">(config)</span># vtp password <span class="colorTextS"><пароль></span>
+              </p>
+            </div><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Ці команди налаштовують VTP, що дозволяє автоматично розповсюджувати інформацію про VLAN між комутаторами.
+             Ви можете встановити режим (server, client або transparent), вказати ім'я домену і встановити пароль для VTP. <br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            5) Перегляд інформації про VLAN: <br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Switch</span># show vlan <br>
+                <span class="colorTextRouter">Switch</span># show interfaces <span class="colorTextS"><інтерфейс></span> switchport <br>
+                <span class="colorTextRouter">Switch</span># show vtp status
+              </p>
+            </div><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Ці команди дозволяють переглядати інформацію про стан VLAN, налаштування портів комутатора та статус VTP відповідно. <br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Зверніть увагу, що конкретні команди та синтаксис можуть змінюватися залежно від версії IOS та моделі комутатора Cisco. 
+          </span>
+        </li>
+        <li class="list-group-item"><strong>Підтримка протоколів мережевої безпеки</strong><button id="btn7" onclick="readMore(flag7, more7, btn7)"> Відобразити </button>
+          <span id="flag7"></span>
+          <span id="more7"> 
+            <br><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Налаштування підтримки протоколів мережевої безпеки на пристроях Cisco може включати в 
+            себе використання різних команд для налаштування захисту мережі, включаючи файрволи,
+             віртуальні приватні мережі (VPN), аутентифікацію і авторизацію, а також контроль доступу. 
+             Ось кілька основних команд для налаштування підтримки протоколів мережевої безпеки на пристроях Cisco: <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             1) Налаштування статичних або динамічних правил файрвола: <br><br>
+             <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># access-list <span class="colorTextS"><номер-ACL> <тип> <джерело> <призначення></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># ip access-group <span class="colorTextS"><номер-ACL> <вхід-або-вихід></span>
+              </p>
+             </div><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Ці команди дозволяють налаштувати правила файрвола на основі списків доступу (ACL). 
+             Ви можете визначити номер ACL, тип правила (дозволяюче або забороняюче), джерело та призначення трафіку. 
+             Потім ви можете застосувати ACL до вхідного або вихідного потоку на конкретному інтерфейсі. <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             2) Налаштування віртуальної приватної мережі (VPN):
+             <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># crypto isakmp policy <span class="colorTextS"><політика-ISAKMP></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-isakmp)</span># encryption <span class="colorTextS"><тип-шифрування></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-isakmp)</span># hash <span class="colorTextS"><тип-хешування></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-isakmp)</span># group <span class="colorTextS"><тип-групи></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-isakmp)</span># lifetime <span class="colorTextS"><тривалість></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># crypto isakmp key <span class="colorTextS"><ключ></span> address <span class="colorTextS">&lt;IP-адреса-віддаленого-пристрою&gt;</span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># crypto ipsec transform-set <span class="colorTextS"><набір-трансформацій> <тип-шифрування></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># crypto map <span class="colorTextS"><назва-мапи> <пріоритет></span> ipsec-isakmp<br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-crypto-map)</span># set peer <span class="colorTextS">&lt;IP-адреса-віддаленого-пристрою&gt;</span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config-crypto-map)</span># set transform-set <span class="colorTextS"><набір-трансформацій></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># crypto map <span class="colorTextS"><назва-мапи></span>
+              </p>
+             </div><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Ці команди дозволяють налаштувати VPN на пристроях Cisco. 
+             Ви можете визначити політику ISAKMP (Internet Security Association and Key Management Protocol), 
+             тип шифрування, тип хешування, тип групи, тривалість ключа та ключ для шифрування трафіку. 
+             Також потрібно налаштувати набір трансформацій IPSec (Internet Protocol Security), мапу IPSec, 
+             вказати віддалені пристрої і застосувати мапу до відповідного інтерфейсу. <br><br>
+
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             3) Налаштування аутентифікації і авторизації: <br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># aaa new-model<br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># aaa authentication <span class="colorTextS"><тип-аутентифікації> <група> <метод></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># aaa authorization <span class="colorTextS"><тип-авторизації> <група> <метод></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># username <span class="colorTextS"><ім'я-користувача></span> password <span class="colorTextS"><пароль></span>
+              </p>
+            </div><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Ці команди дозволяють налаштувати аутентифікацію і авторизацію на пристроях Cisco. 
+            Ви можете використовувати різні типи аутентифікації (наприклад, локальна аутентифікація, TACACS+, RADIUS)
+             і визначити методи аутентифікації та авторизації для кожної групи користувачів. Також потрібно створити користувачів 
+             з іменами та паролями. <br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            4) Налаштування контролю доступу: <br><br>
+            <div class="centered-left-text">
+              <p>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># access-list <span class="colorTextS"><номер-ACL> <тип> <джерело> <призначення></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config)</span># interface <span class="colorTextS"><інтерфейс></span><br>
+                <span class="colorTextRouter">Router</span><span class="colorTextConfig">(config- <span class="colorTextIf">if</span>)</span># ip access-group <span class="colorTextS"><номер-ACL> <вхід-або-вихід></span>
+              </p>
+            </div><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Ці команди дозволяють налаштувати списки доступу (ACL) для контролю доступу до мережі. 
+            Ви можете визначити номер ACL, тип правила (дозволяюче або забороняюче), джерело та призначення трафіку. 
+            Потім ви можете застосувати ACL до вхідного або вихідного потоку на конкретному інтерфейсі. <br><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Це лише кілька прикладів команд для налаштування підтримки протоколів мережевої безпеки на пристроях Cisco.        
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="contact-text">
+
+    
+    <div id="contact" class="container">
+      <h3 class="text-center">Зворотній зв'язок</h3>
+      <p class="text-center">Виникли якісь запитання? Зв'яжіться з нами!</p>
+
+      <div class="row">
+        <div class="col-md-4">
+          <p>Варіанти зв'язку з нами!</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span>Суми, Україна</p>
+          <p><span class="glyphicon glyphicon-phone"></span>Телефон: +38 (044) 333-33-33</p>
+          <p><span class="glyphicon glyphicon-envelope"></span>Email: ciscoHelper@ciscoHelper.com</p>
+        </div>
+      </div>
+      <br>
+      <h3 class="text-center">Автори</h3>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Олександр</a></li>
+        <li><a data-toggle="tab" href="#menu1">Анастасія</a></li>
+        <li><a data-toggle="tab" href="#menu2">Ольга</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <h2>Олександр Тархунов, розробник</h2>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <h2>Анастасія Фролова, контент-мейкер</h2>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <h2>Ольга Ковнер, керівник проекту</h2>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="images/home/Cisco.jpg" class="img-responsive" style="width:100%" height="50%">
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="ВГОРУ">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a><br><br>
+      <p><a data-toggle="tooltip"></a></p>
+    </footer>
+</body>
+
+</html>
